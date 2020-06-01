@@ -1,4 +1,4 @@
-# Machine Learning com Python
+﻿# Machine Learning com Python
 
 - Aplicação dos algoritmos famosos utilizados em machine learning na linguagem de programação Python.
 
@@ -18,3 +18,4 @@
 - Lago, S. P. Introdução a Inteligência Artificial, USP, 2020;
 - Zurubabel. Pré-Processamento e Processamento de Dados. Disponível em: https://zurubabel.blogspot.com/. Acesso em 27 de Abril de 2020;
 - Granatyr, J. IA Expert. Disponível em: https://iaexpert.com.br/. Acesso em 27 de Abril de 2020;
+- RASCHKA, Sebastian; MIRJALILI, Vahid.​​Python Machine Learning, 2nd Ed​.Packt Publishing, 2017;
