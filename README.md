@@ -18,4 +18,5 @@
 - Lago, S. P. Introdução a Inteligência Artificial, USP, 2020;
 - Zurubabel. Pré-Processamento e Processamento de Dados. Disponível em: https://zurubabel.blogspot.com/. Acesso em 27 de Abril de 2020;
 - Granatyr, J. IA Expert. Disponível em: https://iaexpert.com.br/. Acesso em 27 de Abril de 2020;
-- RASCHKA, Sebastian; MIRJALILI, Vahid.​​Python Machine Learning, 2nd Ed​.Packt Publishing, 2017;
+- RASCHKA, Sebastian; MIRJALILI, Vahid. Python Machine Learning, 2nd Ed.Packt Publishing, 2017;
+- Del Moral Hernandez, Emílio. Inteligência Computacional e Redes Neurais em Engenharia Elétrica, PSI-EPUSP, 2005.
