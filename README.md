@@ -1,6 +1,7 @@
 # Machine Learning com Python
+#### Aplicação dos algoritmos famosos utilizados em **Machine Learning** na linguagem de programação Python.
 
-- Aplicação dos algoritmos famosos utilizados em **Machine Learning** na linguagem de programação Python.
+![imagem-capa](https://user-images.githubusercontent.com/58775072/86493069-7403fc00-bd46-11ea-9d9c-25a9684136b8.png)
 
 ### Instalações
 
