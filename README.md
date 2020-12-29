@@ -15,8 +15,8 @@
 
 |**Ordem do Conteúdo**|**Tema**|
 |:-------------------:|:------:|
-|Artigos|[Artigos sobre Machine Learning](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Artigos)|
-|Conteúdo A|[Introdução](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20A%20-%20Introdu%C3%A7%C3%A3o)|
+|Artigos|[Artigos sobre Machine Learning](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/artigos)|
+|Conteúdo A|[Introdução](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/conteudo_a_introducao)|
 |Conteúdo B|[Pré-processamento de Dados](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20B%20-%20Pr%C3%A9-Processamento%20de%20Dados)|
 |Conteúdo C|[Aprendizagem Bayesiana](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20C%20-%20Aprendizagem%20Bayesiana)|
 |Conteúdo D|[Árvore de Decisão](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20D%20-%20%C3%81rvores%20de%20Decis%C3%A3o)|
