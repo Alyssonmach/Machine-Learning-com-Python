@@ -1,54 +1,49 @@
-# Aplicação do método Majority Learner usando Aprendizagem de Regras
+# Aplicação do Majority Learner à aprendizagem por regras
 
-# importando a biblioteca orange do python
+# Importa a biblioteca Orange.
 import Orange
 
-# criando o objeto "dataframe" e passando todos os registros da tabela de 
-# dados
+# Cria o DataFrame e carrega os registros da tabela.
 dataframe = Orange.data.Table('Dados de Credito.csv')
 
-# visualizando os atributos previsores e classe
+# Exibe os atributos preditores e a classe.
 print(dataframe.domain)
 
-# lemandro que a tabela de dados recebeu "i#" no id para ignorar esse campo
-# e "c#" em default para identificar a classe
+# Lembre-se: o identificador "i#" marca o ID para ser ignorado,
+# e "c#" indica a classe.
 
-# separando a tabela de dados em uma tabela para treinamento e outra para 
-# teste
+# Divide os dados em conjuntos de treinamento e teste.
 base_dividida = Orange.evaluation.testing.sample(dataframe, n = 0.25)
 
-# separando em diferentes variáveis a base de dados para teste e outra 
-# treinamento
+# Separa os conjuntos de treinamento e de teste em variáveis distintas.
 base_treinamento = base_dividida[1]
 base_teste = base_dividida[0]
 
-# visualizando a quantidade de registros para cada uma das bases criadas
+# Exibe a quantidade de registros em cada conjunto.
 print(len(base_treinamento))
 print(len(base_teste))
 
-# criando um objeto "classificador" para ser utilizando no treinamento com
-# os dados
+# Cria o classificador que será usado no treinamento com os dados.
 classificador = Orange.classification.MajorityLearner()
 
-# fazendo o treinamento com os dados e a análise da capacidade de predição
-# do algoritmo
+# Treina o modelo e avalia sua capacidade preditiva.
 resultado = Orange.evaluation.testing.TestOnTestData(base_treinamento, base_teste, 
                                                      [classificador])
 
-# exibindo na saída de dados a capacidade de predição do algoritmo por aprendizagem
-# indutiva de regras
+# Exibe a capacidade preditiva do algoritmo de aprendizagem
+# indutiva de regras.
 print(Orange.evaluation.CA(resultado))
 
-# capacidade de predição: 86.4%
+# Acurácia: 86,4%.
 
-# importando o Majority Learn (zeroR) para fazer a contagem de acertos do
-# algoritmo usado em aprendizagem por regras
+# Importa o Majority Learner (ZeroR) para comparar os acertos do
+# algoritmo de aprendizagem por regras.
 from collections import Counter
 
-# exibindo na saída de dados os elementos de acerto em relação a todos 
-# elementos da tabela de teste 
+# Exibe a quantidade de acertos em relação ao total de
+# registros da base de teste.
 print(Counter(str(d.get_class()) for d in base_teste))
-# aproximandamente 437 acertos de 500 registros
+# Aproximadamente 437 acertos em 500 registros.
 
 
 

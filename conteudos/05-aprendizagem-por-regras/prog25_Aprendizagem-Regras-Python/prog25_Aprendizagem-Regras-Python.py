@@ -1,34 +1,34 @@
-# Aprendizagem por Regras - Usando a base de dados de Risco de Crédito
+# Aprendizagem por regras — base de risco de crédito
 
-# importando a biblioteca Orange do Python
+# Importa a biblioteca Orange.
 import Orange
 
-# criando o objeto "dataframe" para receber os registros da tabela de dados
+# Cria o DataFrame para armazenar os registros da tabela.
 dataframe  = Orange.data.Table('Risco_credito.csv')
 
-# observando na saída de dados os atributos previsores e classe
+# Exibe os atributos preditores e a classe.
 print(dataframe.domain)
 
-# criando o objeto "cn2_learner", esse que é um algoritmo de indução por
-# regras
+# Cria o objeto "cn2_learner", um algoritmo de indução por
+# regras.
 cn2_learner = Orange.classification.rules.CN2Learner()
 
-# treinando com a base de dados no objeto "classificador"
-# A base de dados deve possuir, no nome da classe, o seguinte identificador:
-# "c#nameclass". Caso contrário, o orange não poderá indentificar a classe
+# Treina o classificador com a base de dados.
+# A base de dados deve identificar a classe da seguinte forma:
+# "c#nameclass". Caso contrário, o Orange não identificará a classe.
 classificador = cn2_learner(dataframe)
 
-# Observando as regras criadas nesse algoritmo de indução
+# Exibe as regras geradas pelo algoritmo de indução.
 for regras in classificador.rule_list:
     print(regras)
     
-# entrada de dados usando o algoritmo treinado
-# 1º entrada: história boa, dívida alta, garantias nenhuma, renda > 35
-# 2º entrada: história ruim, dívida alta, garantias adequada, renda < 15
+# Insere dados para classificação usando o algoritmo treinado.
+# 1ª entrada: histórico bom, dívida alta, sem garantias e renda > 35.
+# 2ª entrada: histórico ruim, dívida alta, garantia adequada e renda < 15.
 resultado = classificador([['boa', 'alta', 'nenhuma', 'acima_35'],
                            ['ruim', 'alta', 'adequada', '0_15']])
 
-# visualizando a saída de dados para "resultado"
+# Exibe o resultado.
 for i in resultado:
     print(dataframe.domain.class_var.values[i])
 

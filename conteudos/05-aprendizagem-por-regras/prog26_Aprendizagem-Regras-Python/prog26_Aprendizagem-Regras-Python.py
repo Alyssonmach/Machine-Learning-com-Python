@@ -1,47 +1,44 @@
-# Aprendizagem por Regras - Base de Dados de Crédito
+# Aprendizagem por regras — base de crédito
 
-# importando a biblioteca orange do python
+# Importa a biblioteca Orange.
 import Orange
-# com a biblioteca orange, não é necessário fazer toda a parte de 
-# pré-processamento, pois ele já consegue lidar melhor com os dados 
-# em relação ao scikit-learn
+# Com Orange, não é necessário fazer todo o pré-processamento,
+# pois a biblioteca oferece recursos para lidar com esses dados.
 
-# criando o objeto "dataframe" para receber todos os registros da tabela de
-# dados
+# Cria o DataFrame para armazenar todos os registros da tabela.
 dataframe = Orange.data.Table('Dados de Credito.csv')
 
-# visualizando os atributos previsores e classe na saída de dados
+# Exibe os atributos preditores e a classe.
 print(dataframe.domain)
 
-# colocar um identificador "c#nameclass" para identificar a classe
-# colocar um identificador "i#id" para ignorar o id do cliente, esse
-# que só prejudicaria o algoritmo
+# Use o identificador "c#nameclass" para indicar a classe.
+# Use o identificador "i#id" para ignorar o ID do cliente,
+# que não deve ser usado pelo algoritmo.
 
-# separando a tabela de dados em base de treinamento e base de teste
+# Divide os dados em conjuntos de treinamento e teste.
 base_dividida = Orange.evaluation.testing.sample(dataframe, n = 0.25)
 base_treinamento = base_dividida[1]
 base_teste = base_dividida[0]
 
-# visualizando a quantidade de registros em cada uma das bases
+# Exibe a quantidade de registros em cada conjunto.
 print(len(base_treinamento))
 print(len(base_teste))
 
-# criando o objeto "cn2_learner" para realização do treinamento com a base
-# de dados
+# Cria o objeto "cn2_learner" para treinar o modelo com a base
+# de dados.
 cn2_learner = Orange.classification.rules.CN2Learner()
 
-#treinando o algoritmo com o objeto "cn2_learner" criado
+# Treina o algoritmo com o objeto "cn2_learner".
 classificador = cn2_learner(base_treinamento)
 
-# observando as regras geradas para avaliar o algoritmo
+# Exibe as regras geradas para avaliar o algoritmo.
 for regras in classificador.rule_list:
     print(regras)
 
-# fazendo o treinamento com os dados e a análise da capacidade de predição
-# do algoritmo
+# Treina o modelo e avalia sua capacidade preditiva.
 resultado = Orange.evaluation.testing.TestOnTestData(base_treinamento, base_teste, 
                                                      [lambda testdata: classificador])
 print(Orange.evaluation.CA(resultado))
 
-# resultado: 98% de acertos
-# o algoritmo está muito bom para essa base de dados
+# Resultado: 98% de acurácia.
+# O algoritmo apresentou bom desempenho nesta base de dados.
