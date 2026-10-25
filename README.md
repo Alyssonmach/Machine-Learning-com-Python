@@ -60,7 +60,3 @@ Cada módulo mantém juntos os notebooks, scripts, bases de dados, imagens e out
 - Del Moral Hernandez, Emílio. *Inteligência Computacional e Redes Neurais em Engenharia Elétrica*. PSI-EPUSP, 2005.
 
 Veja também os [artigos organizados por tema](referencias/artigos/).
-
-## Licença
-
-Consulte o arquivo [LICENSE](LICENSE).
