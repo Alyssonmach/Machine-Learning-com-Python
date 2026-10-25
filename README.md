@@ -1,48 +1,66 @@
 # Machine Learning com Python
-#### Aplicação dos algoritmos famosos utilizados em **Machine Learning** na linguagem de programação Python.
 
-### Instalações
+Repositório de conteúdos didáticos sobre conceitos e algoritmos de *Machine Learning*, com notebooks Jupyter, exemplos em Python, conjuntos de dados e materiais de apoio.
 
-##### Versão do Python Utilizada
-- [Python 3.7](https://www.python.org/downloads/);
+## Trilha de estudos
 
-##### Importação de recursos pelo Anaconda (Plataforma utilizada para ciência de dados)
-- [Anaconda Data Science Pack](https://www.anaconda.com/products/individual);
+Os módulos estão numerados em uma sequência sugerida: fundamentos, classificação, regressão e, por fim, associação, agrupamento e outros tópicos.
 
-### Conteúdos Abordados no Repositório
+| Ordem | Tema |
+|:---:|---|
+| 01 | [Introdução](conteudos/01-introducao/) |
+| 02 | [Pré-processamento de dados](conteudos/02-pre-processamento/) |
+| 03 | [Aprendizagem bayesiana](conteudos/03-aprendizagem-bayesiana/) |
+| 04 | [Árvores de decisão](conteudos/04-arvores-de-decisao/) |
+| 05 | [Aprendizagem por regras](conteudos/05-aprendizagem-por-regras/) |
+| 06 | [Aprendizagem baseada em instâncias](conteudos/06-aprendizagem-baseada-em-instancias/) |
+| 07 | [Regressão logística](conteudos/07-regressao-logistica/) |
+| 08 | [Máquinas de vetores de suporte](conteudos/08-maquinas-de-vetores-de-suporte/) |
+| 09 | [Redes neurais artificiais](conteudos/09-redes-neurais-artificiais/) |
+| 10 | [Avaliação de algoritmos — parte 1](conteudos/10-avaliacao-de-algoritmos-parte-1/) |
+| 11 | [Avaliação de algoritmos — parte 2](conteudos/11-avaliacao-de-algoritmos-parte-2/) |
+| 12 | [Combinação de classificadores](conteudos/12-combinacao-de-classificadores/) |
+| 13 | [Regressão linear](conteudos/13-regressao-linear/) |
+| 14 | [Outras regressões](conteudos/14-outras-regressoes/) |
+| 15 | [Regras de associação: Apriori](conteudos/15-associacao-apriori/) |
+| 16 | [Regras de associação: ECLAT](conteudos/16-associacao-eclat/) |
+| 17 | [Agrupamento: K-means](conteudos/17-agrupamento-k-means/) |
+| 18 | [Agrupamento hierárquico](conteudos/18-agrupamento-hierarquico/) |
+| 19 | [Agrupamento: DBSCAN](conteudos/19-agrupamento-dbscan/) |
+| 20 | [Redução da dimensionalidade](conteudos/20-reducao-da-dimensionalidade/) |
+| 21 | [Detecção de outliers](conteudos/21-deteccao-de-outliers/) |
 
-|**Ordem do Conteúdo**|**Tema**|
-|:-------------------:|:------:|
-|Artigos|[Artigos sobre Machine Learning](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/artigos)|
-|Conteúdo A|[Introdução](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/conteudo_a_introducao)|
-|Conteúdo B|[Pré-processamento de Dados](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/conteudo_b_pre_processamento)|
-|Conteúdo C|[Aprendizagem Bayesiana](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20C%20-%20Aprendizagem%20Bayesiana)|
-|Conteúdo D|[Árvore de Decisão](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20D%20-%20%C3%81rvores%20de%20Decis%C3%A3o)|
-|Conteúdo E|[Aprendizagem por Regras](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20E%20-%20Aprendizagem%20por%20Regras)|
-|Conteúdo F|[Aprendizagem Baseada em Instâncias](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20F%20-%20Aprendizagem%20Baseada%20em%20Inst%C3%A2ncias)|
-|Conteúdo G|[Regressão Logística](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20G%20-%20Regress%C3%A3o%20Log%C3%ADstica)|
-|Conteúdo H|[Máquina de Vetores de Suporte](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20H%20-%20M%C3%A1quina%20de%20Vetores%20de%20Suporte)|
-|Conteúdo I|[Redes Neurais Artificiais](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20I%20-%20Redes%20Neurais%20Artificiais)|
-|Conteúdo J|[Avaliação de Algoritmos - Parte 01](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20J%20-%20Avalia%C3%A7%C3%A3o%20de%20Algoritmos%20-%20Parte%2001)|
-|Conteúdo K|[Avaliação de Algoritmos - Parte 02](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20K%20-%20Avalia%C3%A7%C3%A3o%20de%20Algoritmos%20-%20Parte%2002)|
-|Conteúdo L|[Combinação de Classificadores](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20L%20-%20Combina%C3%A7%C3%A3o%20de%20Classificadores)|
-|Conteúdo M|[Regressão Linear](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20M%20-%20Regress%C3%A3o%20Linear)|
-|Conteúdo N|[Outras Regressões](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20N%20-%20Outras%20Regress%C3%B5es)|
-|Conteúdo O|[Algoritmo Apriori](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20O%20-%20Algoritmo%20Apriori)|
-|Conteúdo P|[Algoritmo ECLAT](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20P%20-%20Algoritmo%20ECLAT)|
-|Conteúdo Q|[Algoritmo K-means](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20Q%20-%20Algoritmo%20K-means)|
-|Conteúdo R|[Agrupamento Hierárquico](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20R%20-%20Agrupamento%20Hier%C3%A1rquico)|
-|Conteúdo S|[Agrupamento com DBSCAN](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20S%20-%20Agrupamento%20com%20DBSCAN)|
-|Conteúdo T|[Redução de Dimensionalidade](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20T%20-%20Redu%C3%A7%C3%A3o%20da%20Dimensionalidade)|
-|Conteúdo U|[Detecção de Outliers](https://github.com/Alyssonmach/Machine-Learning-com-Python/tree/master/Conte%C3%BAdo%20U%20-%20Detec%C3%A7%C3%A3o%20de%20Outliers)|
+## Como usar os materiais
 
-### Referências 
+1. Escolha um módulo na trilha acima e abra a pasta do exercício.
+2. Siga as subpastas numeradas (`parte...` ou `prog...`) quando houver mais de uma atividade.
+3. Abra os arquivos `.ipynb` no Jupyter Notebook, JupyterLab ou em outro ambiente compatível.
+4. Mantenha o notebook junto dos arquivos de dados e imagens que o acompanham. Se necessário, execute-o a partir da pasta do exercício ou ajuste os caminhos relativos.
 
-- [IA Expert](https://iaexpert.com.br/);
-- [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php);
-- [IEEE Dataports](https://ieee-dataport.org/);
-- Lago, S. P. Introdução a Inteligência Artificial, USP, 2020;
-- Zurubabel. Pré-Processamento e Processamento de Dados. Disponível em: https://zurubabel.blogspot.com/. Acesso em 27 de Abril de 2020;
-- Granatyr, J. IA Expert. Disponível em: https://iaexpert.com.br/. Acesso em 27 de Abril de 2020;
-- RASCHKA, Sebastian; MIRJALILI, Vahid. Python Machine Learning, 2nd Ed.Packt Publishing, 2017;
-- Del Moral Hernandez, Emílio. Inteligência Computacional e Redes Neurais em Engenharia Elétrica, PSI-EPUSP, 2005.
+Os conteúdos foram produzidos em momentos diferentes e podem usar versões distintas de Python e bibliotecas. Não há um ambiente único fixado para todo o repositório; confira os imports e as instruções de cada notebook. Anaconda é uma opção para preparar um ambiente de ciência de dados.
+
+## Organização
+
+```text
+conteudos/                 módulos didáticos numerados e seus exercícios
+referencias/artigos/       artigos e leituras complementares, agrupados por tema
+LICENSE                    licença do repositório
+```
+
+Cada módulo mantém juntos os notebooks, scripts, bases de dados, imagens e outros arquivos de apoio usados nas atividades. As pastas de artigos estão separadas por assunto.
+
+## Referências
+
+- [IA Expert](https://iaexpert.com.br/)
+- [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/)
+- [IEEE DataPort](https://ieee-dataport.org/)
+- Lago, S. P. *Introdução à Inteligência Artificial*. USP, 2020.
+- Zurubabel. *Pré-Processamento e Processamento de Dados*. Disponível em: <https://zurubabel.blogspot.com/>. Acesso em 27 abr. 2020.
+- RASCHKA, Sebastian; MIRJALILI, Vahid. *Python Machine Learning*. 2. ed. Packt Publishing, 2017.
+- Del Moral Hernandez, Emílio. *Inteligência Computacional e Redes Neurais em Engenharia Elétrica*. PSI-EPUSP, 2005.
+
+Veja também os [artigos organizados por tema](referencias/artigos/).
+
+## Licença
+
+Consulte o arquivo [LICENSE](LICENSE).
