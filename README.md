@@ -39,14 +39,6 @@ Os módulos estão numerados em uma sequência sugerida: fundamentos, classifica
 
 Os conteúdos foram produzidos em momentos diferentes e podem usar versões distintas de Python e bibliotecas. Não há um ambiente único fixado para todo o repositório; confira os imports e as instruções de cada notebook. Anaconda é uma opção para preparar um ambiente de ciência de dados.
 
-## Organização
-
-```text
-conteudos/                 módulos didáticos numerados e seus exercícios
-referencias/artigos/       artigos e leituras complementares, agrupados por tema
-LICENSE                    licença do repositório
-```
-
 Cada módulo mantém juntos os notebooks, scripts, bases de dados, imagens e outros arquivos de apoio usados nas atividades. As pastas de artigos estão separadas por assunto.
 
 ## Referências
